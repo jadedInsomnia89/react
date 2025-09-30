@@ -1,0 +1,77 @@
+.logo {
+  height: 3em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+header {
+  background-color: #000;
+  padding: 2em 2em;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav > img {
+  margin-right: 1em;
+}
+
+nav > span {
+    color: #61DAFB;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main {
+  padding: 1rem 3rem;
+  background-image: url(/src/assets/react-logo-half.png);
+  background-repeat: no-repeat;
+  background-position: right 100%;
+}
+
+main > h1 {
+  font-size: 2.4rem;
+}
+
+.facts-list {
+  margin-top: 40px;
+  max-width: 500px;
+}
+
+.facts-list > li {
+    padding-block: 10px;
+    line-height: 19px;
+}
+
+.facts-list > li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+}

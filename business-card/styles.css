@@ -1,0 +1,110 @@
+/* CSS HEX */
+:root {
+    --cal-poly-green: #004b23ff;
+    --office-green: #006400ff;
+    --office-green-2: #007200ff;
+    --office-green-3: #008000ff;
+    --kelly-green: #38b000ff;
+    --sgbus-green: #70e000ff;
+    --spring-bud: #9ef01aff;
+    --lime: #ccff33ff;
+}
+
+body {
+    margin: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: var(--office-green-3);
+    color: var(--lime);
+    border-bottom: 6px solid var(--cal-poly-green);
+    text-shadow: 2px 2px 5px #70e00080;
+    transition: background 2s ease-in, color 1s ease-out;
+}
+
+.card:hover {
+    color: var(--office-green);
+    background: var(--sgbus-green);
+    border: 6px solid var(--cal-poly-green);
+    text-shadow: 2px 2px 5px var(--cal-poly-green);
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/* 
+// CSS HSL
+--cal-poly-green: hsla(148, 100%, 15%, 1);
+--office-green: hsla(120, 100%, 20%, 1);
+--office-green-2: hsla(120, 100%, 22%, 1);
+--office-green-3: hsla(120, 100%, 25%, 1);
+--kelly-green: hsla(101, 100%, 35%, 1);
+--sgbus-green: hsla(90, 100%, 44%, 1);
+--spring-bud: hsla(83, 88%, 52%, 1);
+--lime: hsla(75, 100%, 60%, 1);
+
+// SCSS HEX
+$cal-poly-green: #004b23ff;
+$office-green: #006400ff;
+$office-green-2: #007200ff;
+$office-green-3: #008000ff;
+$kelly-green: #38b000ff;
+$sgbus-green: #70e000ff;
+$spring-bud: #9ef01aff;
+$lime: #ccff33ff;
+
+// SCSS HSL
+$cal-poly-green: hsla(148, 100%, 15%, 1);
+$office-green: hsla(120, 100%, 20%, 1);
+$office-green-2: hsla(120, 100%, 22%, 1);
+$office-green-3: hsla(120, 100%, 25%, 1);
+$kelly-green: hsla(101, 100%, 35%, 1);
+$sgbus-green: hsla(90, 100%, 44%, 1);
+$spring-bud: hsla(83, 88%, 52%, 1);
+$lime: hsla(75, 100%, 60%, 1);
+
+// SCSS RGB
+$cal-poly-green: rgba(0, 75, 35, 1);
+$office-green: rgba(0, 100, 0, 1);
+$office-green-2: rgba(0, 114, 0, 1);
+$office-green-3: rgba(0, 128, 0, 1);
+$kelly-green: rgba(56, 176, 0, 1);
+$sgbus-green: rgba(112, 224, 0, 1);
+$spring-bud: rgba(158, 240, 26, 1);
+$lime: rgba(204, 255, 51, 1);
+
+// SCSS Gradient 
+$gradient-top: linear-gradient(0deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-right: linear-gradient(90deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-bottom: linear-gradient(180deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-left: linear-gradient(270deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-top-right: linear-gradient(45deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-bottom-right: linear-gradient(135deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-top-left: linear-gradient(225deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-bottom-left: linear-gradient(315deg, #004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff);
+$gradient-radial: radial-gradient(#004b23ff, #006400ff, #007200ff, #008000ff, #38b000ff, #70e000ff, #9ef01aff, #ccff33ff); 
+*/
